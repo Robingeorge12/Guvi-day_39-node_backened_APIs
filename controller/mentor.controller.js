@@ -2,7 +2,7 @@ const {Mentor} = require("../model/mentor.model.js");
 
 const getMentor_list = async (req, res) => {
   try {
-    console.log("mt")
+  
     const mentors = await Mentor.find();
 
     res.status(200).send({ message: mentors });

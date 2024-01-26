@@ -2,8 +2,8 @@ require("dotenv").config()
 const express = require("express")
 const cors = require("cors")
 const { connection } = require("./db/db")
-const {studentRouter} = require("../backend/route/student.route")
-const {mentorRouter} =  require("../backend/route/mentor.route")
+const {studentRouter} = require("./route/student.route")
+const {mentorRouter} =  require("./route/mentor.route")
 const app = express()
 
 app.use(express.json());
